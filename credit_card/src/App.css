@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.card-preview {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.card-front,
+.card-back {
+  width: 447px;
+  height: 245px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-front {
+  background: linear-gradient(164deg, #6348fe 4.74%, #610595 88.83%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-front .circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.card-front .card-number {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-front .card-holder,
+.card-front .expiry {
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.card-back {
+  background: linear-gradient(169deg, #fff 5%, #d2d3d9 91.69%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-back .black-strip {
+  background-color: #333;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card-back .cvv {
+  align-self: flex-end;
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.credit-card-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: bold;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+.expiry-cvc-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.expiry-inputs {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  padding: 15px;
+  background-color: #3d0075;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #6e00e5;
+}
